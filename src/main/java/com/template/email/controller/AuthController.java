@@ -1,20 +1,16 @@
 package com.template.email.controller;
 
 import com.template.email.Exception.ResourceNotFoundException;
-import com.template.email.model.HttpResponse;
+
 import com.template.email.service.UserService;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import com.template.email.model.User;
 
-import java.net.URI;
+
+
 import java.time.LocalDateTime;
-import java.util.Map;
+
 
 @RestController
 @RequestMapping("/auth")

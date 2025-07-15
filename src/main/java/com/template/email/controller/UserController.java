@@ -25,6 +25,7 @@ public class UserController {
     @PostMapping("/register")
     public ResponseEntity<HttpResponse>createUser(@RequestBody User user){
         User newUser = userService.saveUser(user);
+
         return ResponseEntity.created(URI.create("")).body(
                 HttpResponse.builder()
                         .timeStamp(LocalDateTime.now().toString())
